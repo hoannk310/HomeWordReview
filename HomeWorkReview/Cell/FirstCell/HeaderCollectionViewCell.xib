@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HeaderCollectionViewCell" customModule="HomeWorkReview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GDg-dB-jGW">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5s3-tM-o2C">
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="archivebox.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mED-4d-jUm">
+                                <rect key="frame" x="25" y="11" width="60" height="57.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="8B4-Al-qsg"/>
+                                    <constraint firstAttribute="height" constant="60" id="MlK-S9-WCD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEN-Ua-GUd">
+                                <rect key="frame" x="38.5" y="73" width="33" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5s3-tM-o2C" secondAttribute="trailing" id="Etl-OG-mwy"/>
+                            <constraint firstAttribute="bottom" secondItem="5s3-tM-o2C" secondAttribute="bottom" id="IvO-xq-8ox"/>
+                            <constraint firstItem="HEN-Ua-GUd" firstAttribute="centerX" secondItem="GDg-dB-jGW" secondAttribute="centerX" id="SnF-Kq-yUO"/>
+                            <constraint firstItem="mED-4d-jUm" firstAttribute="top" secondItem="GDg-dB-jGW" secondAttribute="top" constant="10" id="U61-KA-rhd"/>
+                            <constraint firstItem="5s3-tM-o2C" firstAttribute="top" secondItem="GDg-dB-jGW" secondAttribute="top" id="jcF-Yi-Wb0"/>
+                            <constraint firstItem="HEN-Ua-GUd" firstAttribute="top" secondItem="mED-4d-jUm" secondAttribute="bottom" constant="3" id="nDH-U0-4oe"/>
+                            <constraint firstItem="mED-4d-jUm" firstAttribute="centerX" secondItem="GDg-dB-jGW" secondAttribute="centerX" id="udj-G1-8SR"/>
+                            <constraint firstItem="5s3-tM-o2C" firstAttribute="leading" secondItem="GDg-dB-jGW" secondAttribute="leading" id="xNq-aN-YQZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="GDg-dB-jGW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3ft-jO-V51"/>
+                <constraint firstAttribute="bottom" secondItem="GDg-dB-jGW" secondAttribute="bottom" id="5yn-bq-ATJ"/>
+                <constraint firstItem="GDg-dB-jGW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="94N-cx-N9Y"/>
+                <constraint firstAttribute="trailing" secondItem="GDg-dB-jGW" secondAttribute="trailing" id="gfu-SR-nPk"/>
+            </constraints>
+            <size key="customSize" width="128" height="130"/>
+            <connections>
+                <outlet property="imgCell" destination="mED-4d-jUm" id="Ir5-zv-4LQ"/>
+                <outlet property="lblRoom" destination="HEN-Ua-GUd" id="3uB-CO-tZh"/>
+                <outlet property="viewCustom" destination="5s3-tM-o2C" id="jAf-AI-acY"/>
+            </connections>
+            <point key="canvasLocation" x="196.37681159420291" y="104.12946428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="archivebox.fill" catalog="system" width="128" height="106"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

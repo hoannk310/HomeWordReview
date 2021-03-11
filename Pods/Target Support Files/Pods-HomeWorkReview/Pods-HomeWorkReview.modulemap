@@ -1,0 +1,6 @@
+framework module Pods_HomeWorkReview {
+  umbrella header "Pods-HomeWorkReview-umbrella.h"
+
+  export *
+  module * { export * }
+}
